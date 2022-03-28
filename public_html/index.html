@@ -1,0 +1,126 @@
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/index.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Dylan Miyashiro</title>
+      <style>
+      header, main, footer {
+         padding-left: 300px;
+       }
+
+       @media only screen and (max-width : 992px) {
+         header, main, footer {
+           padding-left: 0;
+         }
+       }
+      </style>
+    </head>
+
+    <body background="images/moonclone.png">
+
+        <ul id="slide-out" class="side-nav indigo darken-2 fixed">
+           <h3 class="center white-text">Dylan Miyashiro</h3>
+             <img src="images/largeme.gif">
+
+           <li><a class="btn waves-effect yellow lighten-3 indigo-text" onclick="aboutClick()">About Me</a></li>
+
+           <li><a id="projectButt" onclick="projClick()" class="btn waves-effect yellow lighten-3 indigo-text">Projects/Labs</a></li>
+
+            <div class="footer-copyright">
+              <div class="container">&copy; 2019 Dylan Miyashiro
+              </div>
+            </div>
+
+         </ul>
+         <a href="#!" data-activates="slide-out" class="button-collapse indigo"><i class="material-icons medium">menu</i></a>
+
+        <main>
+
+          <div class="container row">
+
+            <div class="col s12 m4">
+              <div id="henlo" class="card hoverable indigo scale-transition scale-out">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/knight.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator white-text">Knight's Tour<i class="material-icons right">more_vert</i></span>
+                    <p><a href="knightstour.html" class="white-text">View Me!</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Knight's Tour<i class="material-icons right">close</i></span>
+                  <p>One of my favorite puzzles and first projects that I've ever coded.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div id="henlo2" class="card hoverable indigo scale-transition scale-out">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/me.gif">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator white-text">Primitive Rendering<i class="material-icons right">more_vert</i></span>
+                      <p><a class="white-text" href="#">Under Construction!</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Primitive Rendering<i class="material-icons right">close</i></span>
+                    <p>A small project for my graphics class. Renders various primitives with variables.</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div id="henlo3" class="card hoverable indigo scale-transition scale-out">
+               <div class="card-image waves-effect waves-block waves-light">
+                 <img class="activator" src="images/gungame.png">
+               </div>
+               <div class="card-content">
+                 <span class="card-title activator white-text">Nameless FPS<i class="material-icons right">more_vert</i></span>
+                   <p><a class="white-text" href="shootgame.html">View Me!</a></p>
+               </div>
+               <div class="card-reveal">
+                 <span class="card-title grey-text text-darken-4">Nameless FPS<i class="material-icons right">close</i></span>
+                 <p>Another project that I made for my graphics class! This one's a short little fps.
+                   This was just a bit of exploratory work with FPS mechanics using webGL, so not much has been
+                   implemented. That said, I'm probably still updating this and implementing whatever
+                   I'm learning. You can view all the progress on my github! </p>
+
+                  <p> </p>
+
+                   <p>(It can be wonky on chrome, so I would suggest
+                   using Firefox to view this.)</p>
+               </div>
+              </div>
+            </div>
+
+
+            <div class="container col s12 m6 offset-m3">
+              <div id="aboutCard" class="card indigo scale-transition scale-out">
+                <div class="card-image">
+                  <img src="images/DylanPicture.PNG">
+                  <span class="card-title">About Me</span>
+                </div>
+                <div class="card-content white-text">
+                  <p>Hello! I'm Dylan Miyashiro. I'm a recent graduate from Willamette University with a BA in Computer Science and Mathematics. 
+                    Feel free to check out a few of small projects I've done for class and fun, or to contact me at my email below.
+                  </p>
+                  <p class="center"><a href="mailto:dylanmiyashiro@gmail.com">dylanmiyashiro@gmail.com</a></p>
+                </div>
+                <div class="card-action white-text">
+                    <p><a href="https://github.com/dkmiyashiro">my github!</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+</main>
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/transitions.js"></script>
+
+    </body>
+  </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script type="text/javascript" src="js/knightjava.js"></script>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/index.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <title>Knight's Tour</title>
+        
+        <style>
+        header, main, footer {
+           padding-left: 300px;
+         }
+  
+         @media only screen and (max-width : 992px) {
+           header, main, footer {
+             padding-left: 0;
+           }
+         }
+        </style>
+    </head>
+    
+    <body background="images/moonclone.png">
+
+        <ul id="slide-out" class="side-nav indigo darken-2 fixed">
+            <h3 class="center white-text">
+                Knight's Tour!
+            </h3>
+            <img src="images/largeme.gif">
+     
+            <li><a id="homeButt" href="index.html" class="btn waves-effect red lighten-3 indigo-text">
+                Go Back
+            </a></li>
+
+            <li class= "divider indigo lighten-1"> </li>
+            <li class= "divider indigo lighten-1"> </li>
+
+            <li><a id="startButt" class="btn waves-effect yellow lighten-3 indigo-text" onclick="startKnight()">
+                Start!
+            </a></li>
+     
+            <li><a id="restartButt" onclick="initBoard()" class="btn waves-effect yellow lighten-3 indigo-text">
+                Restart!
+            </a></li>
+     
+            <div class="footer-copyright">
+                <div class="container">
+                    &copy; 2019 Dylan Miyashiro
+                </div>
+            </div>
+     
+        </ul>
+        <a href="#!" data-activates="slide-out" class="button-collapse indigo"><i class="material-icons medium">menu</i></a>
+
+        <main>
+            <div class= "container row">
+                <div id = "canvasHolder" class= "col s12 m10m offset-m2 l8 offset-l3">
+                    <canvas id="knightCanvas" width="490" height="490" style="border:5px solid #000000;">
+                                    Hmnnn big think
+                    </canvas>
+                </div>
+            </div>
+        </main>  
+        
+        
+        <p></p>
+        
+        <p id="currenttime"></p>
+        
+        
+       
+
+        
+    </body>
+
+</html>
